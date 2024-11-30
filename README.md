@@ -2,38 +2,38 @@
 git init #Khởi tạo một kho Git mới (Git repository) trong thư mục hiện tại.
 
 git clone <repository_url> #Tạo một bản sao của một kho từ xa về máy cục bộ.
-#example: git clone https://github.com/username/repository.git`
+example: git clone https://github.com/username/repository.git`
 
 git config
 
-#Cấu hình các thiết lập của Git như tên và email người dùng.
+Cấu hình các thiết lập của Git như tên và email người dùng.
 
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 
 # 2. Kiểm Soát Phiên Bản
-#Kiểm tra trạng thái của các tệp (đã thay đổi, thêm mới, hoặc cần commit).
+Kiểm tra trạng thái của các tệp (đã thay đổi, thêm mới, hoặc cần commit).
 git status
 
-#Thêm tệp vào khu vực đệm (staging area) để chuẩn bị cho commit.
+Thêm tệp vào khu vực đệm (staging area) để chuẩn bị cho commit.
 git add <file>
 
-#Ví dụ
+Ví dụ
 git add filename.txt
 git add . # add all files in current directory
 
-#Lưu các thay đổi vào kho với một thông báo.
+Lưu các thay đổi vào kho với một thông báo.
 git commit -m "<message>"
 
-#Ví dụ
+Ví dụ
 git commit -m "Initial commit"
 
-#Sửa lại commit cuối cùng (sửa nội dung hoặc thông điệp).
+Sửa lại commit cuối cùng (sửa nội dung hoặc thông điệp).
 git commit --amend
 git commit --amend -m "New commit message"
 
 # 3. Làm Việc Với Nhánh
-#Hiển thị danh sách các nhánh hoặc tạo một nhánh mới.
+Hiển thị danh sách các nhánh hoặc tạo một nhánh mới.
 git branch
 
 git branch              # Hiển thị các nhánh
@@ -65,7 +65,7 @@ git pull #Kéo và hợp nhất các thay đổi từ kho từ xa về kho cục
 git pull origin main
 git fetch
 
-#Lấy về các thay đổi từ kho từ xa nhưng không hợp nhất.
+Lấy về các thay đổi từ kho từ xa nhưng không hợp nhất.
 git fetch origin
 
 # 5. Kiểm Soát Lịch Sử
@@ -113,14 +113,14 @@ git tag v1.0.0
 git push origin v1.0.0  # Đẩy tag lên kho từ xa
 
 # Tóm Tắt
-git init	Khởi tạo kho Git mới
-git clone <url>	Tạo bản sao kho từ xa
-git status	Kiểm tra trạng thái
-git add <file>	Thêm tệp vào khu vực đệm
-git commit -m "<msg>"	Lưu các thay đổi với thông báo
-git branch	Hiển thị hoặc tạo nhánh
-git checkout <branch>	Chuyển đổi nhánh
-git merge <branch>	Kết hợp nhánh
-git push	Gửi thay đổi lên kho từ xa
-git pull	Kéo thay đổi từ kho từ xa về cục bộ
-git log	Xem lịch sử các commit
+git init    Khởi tạo kho Git mới
+git clone <url>    Tạo bản sao kho từ xa
+git status    Kiểm tra trạng thái
+git add <file>    Thêm tệp vào khu vực đệm
+git commit -m "<msg>"    Lưu các thay đổi với thông báo
+git branch    Hiển thị hoặc tạo nhánh
+git checkout <branch>    Chuyển đổi nhánh
+git merge <branch>    Kết hợp nhánh
+git push    Gửi thay đổi lên kho từ xa
+git pull    Kéo thay đổi từ kho từ xa về cục bộ
+git log    Xem lịch sử các commit
